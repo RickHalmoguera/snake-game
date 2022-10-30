@@ -10,7 +10,7 @@ body{
     margin: 0;
     height: 100vh;
     display: flex;
-    gap: 2em;
+    gap: 1.5em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@ h1{
 }
 
 .score-display{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .game-grid{
@@ -57,6 +57,19 @@ h1{
 .modal::backdrop{
     background-color:  rgb(0, 0, 0);
     opacity: .5;
+}
+
+.controls{
+    padding: .5em;
+    background-color: rgb(128, 128, 128);  
+    border: 10px solid rgb(255, 255, 255);
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: .5em .5em; 
+    grid-template-areas: 
+        ". space2 ."
+        "space4 space5 space6"; 
 }
 
 

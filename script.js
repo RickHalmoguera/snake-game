@@ -2,6 +2,10 @@ const grid = document.querySelector(".game-grid")
 const modal = document.getElementById('dialog-rounded')
 const closeModal = document.querySelector(".nes-btn")
 const actualScore = document.querySelector(".score-display")
+const goUp = document.getElementById("upBtn")
+const goDown = document.getElementById("downBtn")
+const goLeft = document.getElementById("leftBtn")
+const goRight = document.getElementById("rightBtn")
 
 let myInterval = ""
 let snake = [2,1,0]
@@ -66,10 +70,43 @@ checkApple= (squares)=>{
     }
 }
 
+setRight = () => {
+    if(direction ==-1){
+
+    }else{
+        direction = 1
+    }
+}
+
+setLeft = () => {
+    if(direction ==1){
+            
+    }else{
+        direction = -1
+    }
+}
+
+setUp = () => {
+    if(direction ==gridWidth){
+            
+    }else{
+        direction = -gridWidth
+    }
+}
+
+setDown = () => {
+    if(direction == -gridWidth){
+            
+    }else{
+        direction = gridWidth
+    }
+}
+
+
 
 getDirection= (e)=>{
     
-    if (e.code == "ArrowRight"){
+    if (e.code == "ArrowRight")  {
         if(direction ==-1){
 
         }else{
@@ -130,6 +167,11 @@ startGame()
 
 document.addEventListener("keydown", getDirection)
 closeModal.addEventListener("click", resetGame)
+goUp.addEventListener("click",setUp)
+goDown.addEventListener("click",setDown)
+goLeft.addEventListener("click",setLeft)
+goRight.addEventListener("click",setRight)
+
 
 
 
