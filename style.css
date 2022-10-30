@@ -1,0 +1,62 @@
+*{
+    box-sizing: content-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.score-display{
+    font-size: 2rem;
+}
+
+.game-grid{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(128, 128, 128);  
+    border: 10px solid rgb(255, 255, 255);
+    
+}
+
+.game-grid div{
+    width: 10px;
+    height: 10px;
+}
+
+.snake{
+    background-color: rgb(65, 65, 66) ;
+}
+
+.apple{
+
+    background-color: rgb(255, 255, 255);
+   
+}
+
+.modal{
+    text-align: center;
+}
+
+.modal::backdrop{
+    background-color:  rgb(0, 0, 0);
+    opacity: .5;
+}
+
+
