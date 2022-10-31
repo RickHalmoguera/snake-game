@@ -6,27 +6,24 @@
 
 <h1>Funciones principales</h1>
   <ul>
-    <li>Mostrar al los datos según el archivo de datos</li>
-    <li>Cuando hacemos Hover a las barras, mostrar el gasto y cambiar el color de las mismas</li>
-    <li>Si se modifica el archivo de datos de forma manual, las barras se deben ajustar por si solas.</li>
+    <li>Controlar el juego por teclado y el control integrado.</li>
+    <li>Se debe llevar un contador de los puntos ganados en la partida.</li>
+    <li>Cuando el jugador pierde, notificarlo y preguntar si quiere intentarlo de nuevo.</li>
    
   </ul>
   
   <h1>Recursos utilizados</h1>
   <ul>
-      <li><p><a href="https://www.w3schools.com/js/js_api_intro.asp">Web APIs - Introduction</a></p></li>
-    <p>A pesar de ser un archivo local, se simuló que los datos tienen de origen un API</p>
-      <li><p><a href="https://www.w3schools.com/jsref/jsref_filter.asp">JavaScript Array filter()
-</a></p></li>
-    <p>Documentación del metodo Filter()</p>
-      <li><p><a href="https://www.w3schools.com/jsref/jsref_map.asp">JavaScript Array map()</a></p></li>
-    <p>Documentación del método Map()</p>
-      <li><p><a href="JavaScript Sorting Arrays">JavaScript Sorting Arrays</a></p></li>
-    <p>Documentación del método Sort()</p>
-      <li><p><a href="https://www.w3schools.com/jsref/jsref_reduce.asp">JavaScript Array reduce()</a></p></li>
-    <p>Documentación del método Reduce()</p>
-    <li><p><a href="https://www.frontendmentor.io/home">Frontend Mentor</a></p></li>
-    <p>Página Web donde podrás conseguir retos de Frontend. Muy recomendado!</p>
+    <li><a href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp"> JavaScript HTML DOM EventListener </a></p></li>
+    <p>Documentación sobre los Event Listeners que podemos utilizar para manipular el DOM</p>
+    <li><a href="https://www.w3schools.com/jsref/jsref_pop.asp"> JavaScript Array pop() </a></p></li>
+    <p>Documentación del método pop()</p>
+    <li><a href="https://www.w3schools.com/jsref/jsref_unshift.asp"> JavaScript Array unshift() </a></p></li>
+    <p>Documentación del método unshift()</p>
+    <li><a href="https://www.w3schools.com/js/js_random.asp"> JavaScript Random </a></p></li>
+    <p>Documentación del método para generar un número aleatorio()</p>
+    <li><a href="https://www.w3schools.com/jsref/prop_element_classlist.asp"> HTML DOM Element classList </a></p></li>
+    <p>Documentación del método classList para manipular el DOM</p>
   </ul>
   <h1>Código</h1>
   <p>Con toda libertad puedes bajar o clonar este repositorio!</p>
