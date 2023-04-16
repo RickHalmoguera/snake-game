@@ -2,6 +2,11 @@ const gameGrid = document.getElementById("gridContainer")
 const startBtn = document.getElementById("StartBtn")
 const scoreDisplay = document.getElementById("score")
 const winLoseDisplay = document.getElementById("winLoseText")
+const upKey = document.getElementById("Up")
+const downKey = document.getElementById("Down")
+const leftKey = document.getElementById("Left")
+const rightKey = document.getElementById("Right")
+
 let squares
 
 const snakeSize = 3
@@ -90,14 +95,13 @@ const moveSnake = () =>{
 
 
 const getDirection = (event)=>{
-    
-    if(event.key =="ArrowDown" && direction !== -rowSize ){
+    if((event.key =="ArrowDown" && direction !== -rowSize) || (event.target.id == "Down" && direction !== -rowSize)){
         direction = + rowSize
-    }else if(event.key == "ArrowUp" && direction !== + rowSize ){
+    }else if((event.key == "ArrowUp" && direction !== + rowSize) || (event.target.id == "Up" && direction !== +rowSize) ){
         direction = - rowSize
-    }else if(event.key == "ArrowLeft" && direction !== + 1 ){
+    }else if((event.key == "ArrowLeft" && direction !== + 1) || (event.target.id == "Left" && direction !== +1)){
         direction = - 1
-    }else if(event.key == "ArrowRight" && direction !== -1 ){
+    }else if((event.key == "ArrowRight" && direction !== -1) || (event.target.id == "Right" && direction !== -1) ){
         direction = + 1
     }
 }
@@ -106,4 +110,5 @@ const getDirection = (event)=>{
 startBtn.addEventListener("click", startGame)
 
 window.addEventListener("keydown", () => getDirection(event))
+window.addEventListener("click", () => getDirection(event))
 
